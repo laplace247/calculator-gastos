@@ -1,0 +1,110 @@
+body {
+    background-image: url('fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    font-size: 1rem;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+button[type="submit"] {
+    background-color: #2ecc71;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bolder;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border: 2px solid rgba(255, 255, 255, 255, .5);
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.15); /* fondo semi-transparente */
+    backdrop-filter: blur(10px); /* desenfoque */
+    -webkit-backdrop-filter: blur(10px); /* soporte Safari */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    color: black;
+    text-align: center;
+}
+
+.botonEliminar {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botonEliminar:hover {
+    background-color: #c0392b;
+}

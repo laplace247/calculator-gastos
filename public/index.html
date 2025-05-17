@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de gastos personales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Gastos</h1>
+    <form id="expense-form">
+        <input type="text" id="description" placeholder="Descripción" required>
+        <input type="number" id="amount" placeholder="Monto" required>
+        <select id="category">
+            <option value="comida">Comida</option>
+            <option value="transporte">Transporte</option>
+            <option value="ocio">Ocio</option>
+            <option value="etc">Otros</option>
+        </select>
+        <button type="submit">Agregar Gasto</button>
+    </form>
+    <h2>Total: <span id="total">0</span></h2>
+    <table id="expenses-table">
+        <thead>
+            <tr>
+                <th>Descripción</th>
+                <th>Monto</th>
+                <th>Categoría</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
