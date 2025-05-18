@@ -15,6 +15,8 @@ h1, h2 {
     text-align: center;
     color: #000000;
     margin-top: 20px;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: rgb(32, 26, 26);
 }
 
 form {
@@ -54,12 +56,13 @@ input::placeholder {
 button[type="submit"] {
     background-color: #2ecc71;
     color: black;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 10px 20px;
     border-radius: 8px;
-    font-weight: bolder;
+    
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -71,8 +74,6 @@ button[type="submit"]:hover {
     background-color: #27ae60;
 }
 
-
-
 table {
     width: 90%;
     margin: 30px auto;
@@ -80,16 +81,14 @@ table {
     border-collapse: collapse;
     border-radius: 10px;
     overflow: hidden;
-    background-color: rgba(255, 255, 255, 0.15); /* fondo semi-transparente */
-    backdrop-filter: blur(10px); /* desenfoque */
-    -webkit-backdrop-filter: blur(10px); /* soporte Safari */
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(10px); 
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 th, td {
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 12px;
     color: black;
@@ -100,6 +99,7 @@ th, td {
     background-color: #e74c3c;
     color: white;
     border: none;
+    font-weight: bold;
     padding: 8px 12px;
     border-radius: 6px;
     cursor: pointer;
